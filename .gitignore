@@ -1,14 +1,54 @@
-.venv/
+# Python
 __pycache__/
 *.py[cod]
-*.sqlite3
-db.sqlite3
-.env
-*.log
-pip-log.txt
-.DS_Store
-.idea/
-.vscode/
+*$py.class
+*.so
+.Python
 *.egg-info/
+.eggs/
 dist/
 build/
+
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Django
+db.sqlite3
+*.sqlite3
+*.log
+local_settings.py
+staticfiles/
+media/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+.cursor/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Test / smoke artifacts
+pip-log.txt
+http-smoke.json
+smoke-out.txt
+smoke-result.json
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Demo recordings (large / local-only)
+demo/live-demo.mp4
+demo/fuel-route-demo.webm
+demo/video_raw/
+demo/frames/
+*.webm
+*.mp4
