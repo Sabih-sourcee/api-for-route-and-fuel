@@ -1,0 +1,20 @@
+{
+  "status": 200,
+  "keys": [
+    "start",
+    "finish",
+    "distance_miles",
+    "duration_hours",
+    "mpg",
+    "max_range_miles",
+    "total_fuel_gallons",
+    "total_fuel_cost",
+    "map_url",
+    "route",
+    "fuel_stops",
+    "notes",
+    "attribution"
+  ],
+  "cost": 162.59,
+  "stops": 2
+}

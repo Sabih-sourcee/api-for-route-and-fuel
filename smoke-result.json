@@ -1,0 +1,28 @@
+﻿{
+  "elapsed_seconds": 3.4,
+  "distance_miles": 1004.3,
+  "total_fuel_cost": 162.59,
+  "total_fuel_gallons": 55.99,
+  "fuel_stop_count": 2,
+  "fuel_stops": [
+    {
+      "name": "KUM & GO #0370",
+      "city": "Gretna",
+      "state": "NE",
+      "price": 2.9207,
+      "gallons": 48.32,
+      "cost": 141.12,
+      "mile": 483.2
+    },
+    {
+      "name": "AKAL TRAVEL CENTER",
+      "city": "Waco",
+      "state": "NE",
+      "price": 2.799,
+      "gallons": 7.67,
+      "cost": 21.47,
+      "mile": 559.9
+    }
+  ],
+  "map_url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=41.8755616%2C-87.6244212%3B39.7392364%2C-104.984862"
+}

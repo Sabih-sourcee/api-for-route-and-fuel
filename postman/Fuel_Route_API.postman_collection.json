@@ -1,0 +1,57 @@
+{
+  "info": {
+    "name": "Fuel Route API",
+    "description": "Cost-optimal fuel stops along a USA driving route (Django assessment).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Plan route (POST) — Chicago to Denver",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start\": \"Chicago, IL\",\n  \"finish\": \"Denver, CO\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/route/",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "v1", "route", ""]
+        },
+        "description": "Main demo request. Returns map_url, route geometry, fuel_stops, total_fuel_cost."
+      }
+    },
+    {
+      "name": "Plan route (GET) — NYC to Boston",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/route/?start=New York, NY&finish=Boston, MA",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "v1", "route", ""],
+          "query": [
+            {
+              "key": "start",
+              "value": "New York, NY"
+            },
+            {
+              "key": "finish",
+              "value": "Boston, MA"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
